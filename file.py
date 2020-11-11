@@ -11,7 +11,7 @@ win = pygame.display.set_mode((w, h))
 
 # ---------- Variables -------
 x = w // 2
-y = h// 2
+y = h // 2
 
 # ---------- Variables -------
 
@@ -29,6 +29,8 @@ pygame.display.update()
 def draw():
     win.fill(white)
     pygame.draw.rect(win, black, (x, y, 20, 20))
+    pygame.display.update()
 
 
 while True:
+   draw()
