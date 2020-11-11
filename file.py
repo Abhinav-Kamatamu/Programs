@@ -5,7 +5,7 @@ import sys
 
 pygame.init()
 
-w = 1366
+w = 1368
 h = 750
 
 win = pygame.display.set_mode((w, h))
