@@ -1,11 +1,12 @@
 import pygame
 from pygame.locals import *
 import random
+import sys
 
 pygame.init()
 
-w = 900
-h = 900
+w = 1366
+h = 750
 
 win = pygame.display.set_mode((w, h))
 
@@ -33,4 +34,10 @@ def draw():
 
 
 while True:
-   draw()
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+
+        else:
+            draw()
